@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;/*10px usaremos esse comando para tornar as unida
+  de medida responsivo e nao mais fixo como era o caso do px*/
+}
+body{
+  font-family: "Epilogue", sans-serif;
+  
+  background: #ECE9FD;
+  
+  padding: 6.0rem 2.3rem 6.6rem;
+  font-size: 1.6rem;
+}
+
+main{
+  max-width: 33.0rem;
+  margin: 0 auto;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  
+  color: #090039;
+  
+  margin-bottom: 1.5rem;
+}
+
+main p:first-child{
+  color: #7158EF;
+  letter-spacing: 3px;/*como a unidade eh mt pequena, manteremos em px*/
+  text-transform: uppercase;
+  line-height: 3.2rem;
+
+  margin-bottom: 1.7rem;
+  
+}
+
+h1 + p{/*ele seleciona o p q anteriormente tem um h1*/
+  color:  rgba(10, 0, 57, 0.64);
+  line-height: 3.2rem;
+  
+  margin-bottom: 3.2rem;
+}
+
+a{
+  color: #090039;
+  text-decoration: none;/*retirou o sublinhado do link */
+}
+
+a:hover{/*quando passar o mouse em cima, altera as confs*/
+  color: #7158EF;
+  font-weight: bold;
+}
+
+
+ul{
+  list-style: none; /*retirar carcteristicas da lista, consequentemente os bullets q apareceram*/
+  margin-top: 7.2rem;
+}
+ul li{
+  color: #090039;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+
+  max-width: 25.7rem;
+  
+  display: flex;
+  gap: 3.8rem;
+}
+
+ul li +li {
+  margin-top: 3.2rem;
+}
+
+ul li span{
+  font-weight: 800;
+  font-size: 7.2rem;
+  line-height: 8rem;
+  letter-spacing: -2px;/*como a medida eh mt pequena, mantemos em px*/
+  
+
+  color: #090039;
+}
+
+@media (min-width: 700px){
+  body{
+    padding: 8rem;
+  }
+  main{
+    max-width: 1020px;
+    display: flex;
+    gap: 10rem;
+    
+  }
+  main > div{
+    max-width: 484px;
+  }
+
+  ul li {
+    gap:5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+
+}
